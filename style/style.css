@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;700&family=Vina+Sans&display=swap');
+
+:root {
+    --cor-um: #001B79;
+    --cor-dois: #1640D6;
+    --cor-tres: #f6f6f6;
+    --cor-quatro: #ED5AB3;
+    --fonte-primaria: 'Vina Sans', sans-serif;
+    --fonte-secundaria: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(#1640D6, #001B79);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: var(--fonte-secundaria);
+}
+
+.cabecalho{
+    padding: 2% 0% 2% 0%;
+    display: flex;
+    justify-content: center;
+}
+
+.principal{
+    display: flex;
+    justify-content: center;
+    flex: 1 1 0;
+}
+
+.principal__conteudo{
+    padding: 2% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10rem;
+}
+
+.principal__conteudo__imagem{
+    width: 30%;
+}
+
+.principal__conteudo__informacoes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    gap: 3rem;
+}
+
+.principal__conteudo__informacoes__titulo{
+    color: var(--cor-tres);
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.principal__conteudo__informacoes__titulo__destaque{
+    color: var(--cor-quatro);
+}
+
+.principal__conteudo__informacoes__texto{
+    color: var(--cor-tres);
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: 200;
+    width: 70%;
+}
+
+.principal__conteudo__informacoes__lista{
+    color: var(--cor-tres);
+    font-size: 1.5rem;
+    font-weight: 200;
+}
+
+.principal__conteudo__informacoes__botao{
+    padding: 0% 5% 1.5% 5%;
+    text-decoration: none;
+    color: var(--cor-tres);
+    background-color: var(--cor-quatro);
+    font-family: var(--fonte-primaria);
+    font-size: 3.75rem;
+    border-radius: 1rem;
+}
+
+.rodape{
+    margin: 1%;
+    text-align: center;
+    color: var(--cor-tres);
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 1200px) {
+    .cabecalho{
+        padding: 4% 0% 0% 0%;
+    }
+    
+    .principal__conteudo{
+        padding: 15% 0% 0% 0%;
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    .principal__conteudo__imagem{
+        width: 50%;
+    }
+
+    .principal__conteudo__informacoes{
+        gap: 40px;
+    }
+
+    .principal__conteudo__informacoes__texto{
+        width: 100%;
+    }
+
+    .principal__conteudo__informacoes__lista{
+        padding: 0%;
+        font-size: 20px;
+    }
+
+    .principal__conteudo__informacoes__botao{
+        font-size: 2.5rem;
+    }
+
+    .rodape{
+       padding: 15% 0% 5% 0%;
+    }
+}

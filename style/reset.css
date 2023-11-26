@@ -1,0 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    box-sizing: border-box; /*Box sizing define o comportamento. Nesse caso, está ajustando para que todos os itens dentro de body se ajustem ao seu tamanho*/
+   height: 100vh; /* height: 100vh; Aqui estamos definindo que o body vai assumir 100% da Height da Viewport*/
+}
